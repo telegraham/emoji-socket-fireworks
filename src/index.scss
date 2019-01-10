@@ -1,0 +1,23 @@
+body { 
+  margin: 0; 
+  padding: 0;
+  // background: pink;
+  overflow: hidden;
+}
+canvas { 
+  width: 100% !important; 
+  height: 100% !important;
+}
+.hide {/*
+  /*opacity: .5;
+  position: absolute;
+  top: 0;
+  left: 0;
+  /*background: #000;*/
+  display: none;
+
+  canvas {
+    width: 256px !important;
+    height: 256px !important;
+  }
+}
