@@ -47,6 +47,7 @@ class EmojiCanvasSet {
     context.translate(canvas.width / 2,canvas.height / 2);
 
     context.font=`${ radius }px Georgia`;
+    context.fillStyle = "#ffffff"
     var width = context.measureText(emoji).width;
     context.fillText(emoji, 0 - (width / 2), 0 + (radius / 2.35));
     return canvas;

@@ -3,9 +3,10 @@ import penner from 'penner'
 
 export default class Firework {
 
-  constructor({ createMesh, render }){
+  constructor({ createMesh, render, done }){
     this.particles = this.constructor.makeParticles(100, createMesh);
     this.render = render;
+    this.done = done;
     this.go = this.go.bind(this)
   }
 
@@ -21,6 +22,7 @@ export default class Firework {
     // console.log(elapsed)
     this.render()
     if (elapsed < 3000) requestAnimationFrame(this.go)
+    else if (this.done) this.done()
   }
 
   static makeParticles(howMany, createMesh) {
