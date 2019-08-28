@@ -9,6 +9,34 @@
     <!-- <script type="text/javascript" src="index.css"></script> -->
   </head>
   <body>
+
+    <main class="instructions">
+      <p>
+      Today, we'll use an API hosted at<br />
+      <code>https://emoji-firework-api.herokuapp.com/</code>
+    </p>
+    
+    <p>You won't see anything if you go to this URL in a browser.<br/>You will see <em>nothing</em> if you go to this URL in a browser.</p>
+    <p>This API only has one route: one that creates a firework.</p>
+
+    <p>Make a request, using <code>fetch</code>, to the RESTful route you'd use to <em>create</em> a firework. If you need to refresh your memory on REST, consult a reference of your choosing.</p>
+
+    <p>
+      Unlike a <code>GET</code>, making a <code>POST</code>, <code>PUT</code>, <code>PATCH</code>, or <code>DELETE</code> request requires passing a second argument to <code>fetch</code>. Consult the MDN documentation for <code>fetch</code> for more details.
+    </p>
+
+    <p>
+      You'll need to: <ol>
+        <li>Specify the request method (<code>fetch</code> defaults to <code>GET</code>)</li>
+        <li>Provide <em>stringified</em> JSON as the body for the request</li>
+        <li>Use a <code>Content-Type</code> header so that the API knows what kind of data you're sending. (Bonus points for an <code>Accepts</code> header, but make sure you know the difference).</li>
+      </ol> 
+      Consult the MDN documentation for <code>fetch</code> to learn more about why and how to do these.
+    </p>
+    <p>If you get a 422 error, that's good news! You're on the right track. Consult the network tab or parse the JSON that the API returned for more information about the error.</p>
+    <p>On a Mac, the keyboard shortcut to get an emoji picker is control-command-space.<p>
+    <p>Good luck!</p>
+    </main>
     <script type="text/javascript" src="main.js"></script>
   </body>
 </html>
